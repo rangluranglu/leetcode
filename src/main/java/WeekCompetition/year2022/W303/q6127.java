@@ -1,7 +1,5 @@
 package WeekCompetition.year2022.W303;
 
-import javafx.util.Pair;
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
