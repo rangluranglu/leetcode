@@ -10,13 +10,15 @@ public class q400 {
             q ++;
             digit *= 10;
         }
-
+        // n为剩余位数
+        // index 第 index 位个数
         int index = n - 1;
+        // 起始数字
         int startNum = (int)Math.pow(10, q - 1);
-
+        // 找到数字
         int digitIndex = index % q;
         int num = startNum + index / q;
-
+        // 去除后半部分
         int ans = (num / (int) (Math.pow(10, q - digitIndex - 1))) % 10;
         return ans;
     }
