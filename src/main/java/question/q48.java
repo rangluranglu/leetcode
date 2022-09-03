@@ -2,7 +2,6 @@ package question;
 
 public class q48 {
     public void rotate(int[][] matrix) {
-i
         int n = matrix.length;
 
         // 按主对角线翻转
