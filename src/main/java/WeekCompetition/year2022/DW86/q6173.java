@@ -73,7 +73,6 @@ public class q6173 {
             ans.add(new ArrayList<Integer>(depth));
             return;
         }
-
         depth.add(start);
         dfs(n, start + 1, depth, target);
         depth.remove(depth.size() - 1);
