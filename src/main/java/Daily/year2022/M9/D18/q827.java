@@ -1,11 +1,11 @@
-package Daily.year2022.M9;
+package Daily.year2022.M9.D18;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class D18 {
+public class q827 {
     int[][] directions = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
     public int largestIsland(int[][] grid) {
         // dfs 标记
