@@ -44,4 +44,66 @@ public class q854 {
         s[i] = s[j];
         s[j] = tmp;
     }
+
+    // 启发式搜索
+    int n;
+    String t;
+    public int kSimilarity2(String s1, String s2) {
+        // 启发式搜索
+        if(s1.equals(s2)){
+            return 0;
+        }
+
+        t = s2;
+        n = s1.length();
+        Map<String, Integer> map = new HashMap<>();
+        PriorityQueue<String> pq = new PriorityQueue<>((a, b) ->{
+            // f = g + h
+            int v1 = h(a), v2 = h(b), g1 = map.get(a), g2 = map.get(b);
+
+            return (v1 + g1) - (v2 + g2);
+        });
+        map.put(s1, 0);
+        pq.add(s1);
+
+        while(!pq.isEmpty()){
+            String poll = pq.poll();
+            int step = map.get(poll);
+            char[] cs = poll.toCharArray();
+            int idx = 0;
+            while(idx < n && cs[idx] == t.charAt(idx)){
+                idx++;
+            }
+
+            for (int i = idx + 1; i < n; i++){
+                if(cs[i] != t.charAt(idx) || cs[i] == t.charAt(i)){
+                    continue;
+                }
+                swap(cs, idx, i);
+                String nextStr = String.valueOf(cs);
+                swap(cs, idx, i);
+
+                if(map.containsKey(nextStr) && map.get(nextStr) <= step + 1){
+                    continue;
+                }
+
+                if(nextStr.equals(t)){
+                    return step + 1;
+                }
+
+                map.put(nextStr, step + 1);
+                pq.add(nextStr);
+            }
+        }
+
+        return -1;
+    }
+
+    private int h(String s){
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            ans += s.charAt(i) != t.charAt(i) ? 1 : 0;
+            return (ans + 1) >> 1;
+        }
+    }
 }
