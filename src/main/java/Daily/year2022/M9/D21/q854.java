@@ -103,7 +103,8 @@ public class q854 {
         int ans = 0;
         for (int i = 0; i < n; i++) {
             ans += s.charAt(i) != t.charAt(i) ? 1 : 0;
-            return (ans + 1) >> 1;
+
         }
+        return (ans + 1) >> 1;
     }
 }
