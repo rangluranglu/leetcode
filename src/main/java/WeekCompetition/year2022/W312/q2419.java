@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.W312;
 
-public class q6189 {
+public class q2419 {
     public int longestSubarray(int[] nums) {
         // 最长的相同
         int max = Integer.MIN_VALUE, maxLen = 0;

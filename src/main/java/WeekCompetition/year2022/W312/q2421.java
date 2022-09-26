@@ -3,7 +3,7 @@ package WeekCompetition.year2022.W312;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class q6191 {
+public class q2421 {
     public static void main(String[] args) {
         int[] vals = {1,3,2,1,3};
         int[][] edges = {{0,1}, {0,2},{2,3},{2,4}};

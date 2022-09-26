@@ -2,7 +2,7 @@ package WeekCompetition.year2022.W312;
 
 import java.util.Arrays;
 
-public class q6188 {
+public class q2418 {
     public String[] sortPeople(String[] names, int[] heights) {
         int n = names.length;
         Integer[] idx = new Integer[n];

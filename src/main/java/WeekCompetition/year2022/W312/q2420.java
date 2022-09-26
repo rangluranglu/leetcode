@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class q6190 {
+public class q2420 {
     public static void main(String[] args) {
         int[] a = {2, 1, 1, 1, 3, 4, 1};
         System.out.println(goodIndices(a, 2));
