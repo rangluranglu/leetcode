@@ -2,7 +2,7 @@ package WeekCompetition.year2022.W308;
 
 import java.util.*;
 
-public class q6163 {
+public class q2392 {
     public static void main(String[] args) {
         int[][] a = {{1,2}, {3,2}};
         int[][] b = {{2,1},{3,1}};

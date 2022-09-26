@@ -3,7 +3,7 @@ package WeekCompetition.year2022.W308;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class q6161 {
+public class q2390 {
     public String removeStars(String s) {
 
         Deque<Character> stack = new ArrayDeque<>();

@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.W308;
 
-public class q6162 {
+public class q2391 {
     public int garbageCollection(String[] garbage, int[] travel) {
         int n = garbage.length;
         int[] metal = new int[n];

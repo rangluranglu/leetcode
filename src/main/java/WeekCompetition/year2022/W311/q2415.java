@@ -2,7 +2,7 @@ package WeekCompetition.year2022.W311;
 
 import Common.TreeNode;
 
-public class q6182 {
+public class q2415 {
     public TreeNode reverseOddLevels(TreeNode root) {
         // 同时遍历左右子树
         dfs(root.left, root.right, 1);

@@ -2,7 +2,7 @@ package WeekCompetition.year2022.W311;
 
 import java.util.Arrays;
 
-public class q6181 {
+public class q2414 {
     public int longestContinuousSubstring(String s) {
         int n = s.length();
         if(n == 1){

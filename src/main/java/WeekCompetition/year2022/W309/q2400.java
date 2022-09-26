@@ -2,7 +2,7 @@ package WeekCompetition.year2022.W309;
 
 import java.util.Arrays;
 
-public class q6168 {
+public class q2400 {
     public static void main(String[] args) {
         System.out.println(numberOfWays(989, 1000, 99));
     }

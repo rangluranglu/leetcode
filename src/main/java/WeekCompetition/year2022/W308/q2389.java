@@ -2,7 +2,7 @@ package WeekCompetition.year2022.W308;
 
 import java.util.Arrays;
 
-public class q6160 {
+public class q2389 {
     public int[] answerQueries(int[] nums, int[] queries) {
         int n = queries.length;
         int[] ans = new int[n];

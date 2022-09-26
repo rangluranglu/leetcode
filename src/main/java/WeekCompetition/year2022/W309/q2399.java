@@ -2,7 +2,7 @@ package WeekCompetition.year2022.W309;
 
 import java.util.Arrays;
 
-public class q6167 {
+public class q2399 {
     public boolean checkDistances(String s, int[] distance) {
         int[] count = new int[26];
         int n = s.length();
