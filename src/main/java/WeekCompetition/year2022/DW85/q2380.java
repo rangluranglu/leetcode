@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.DW85;
 
-public class q6157 {
+public class q2380 {
     public int secondsToRemoveOccurrences(String s) {
         // dp
         int n = s.length();

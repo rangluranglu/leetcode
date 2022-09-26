@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.W307;
 
-public class q6152 {
+public class q2383 {
     public static void main(String[] args) {
         int[] energy = {1, 4, 3, 2};
         int[] experince = {2,6,3,1};

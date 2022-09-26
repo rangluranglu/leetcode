@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.DW83;
 
-public class q6129 {
+public class q2348 {
     public static void main(String[] args) {
         int[] nums = new int[100000];
         System.out.println(zeroFilledSubarray(nums));

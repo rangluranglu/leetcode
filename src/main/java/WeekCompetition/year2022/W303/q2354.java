@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class q6127 {
+public class q2354 {
     public static void main(String[] args) {
         int[] nums = {1,2,3,1};
         System.out.println(countExcellentPairs(nums, 3));

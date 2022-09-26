@@ -2,7 +2,7 @@ package WeekCompetition.year2022.W304;
 
 import java.util.Arrays;
 
-public class q6133 {
+public class q2358 {
     public static void main(String[] args) {
         int[] nums = {10,6,12,7,3,5};
         System.out.printf("" + maximumGroups(nums));

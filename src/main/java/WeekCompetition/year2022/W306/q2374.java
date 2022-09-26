@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.W306;
 
-public class q6149 {
+public class q2374 {
     public int edgeScore(int[] edges) {
         int n = edges.length;
 

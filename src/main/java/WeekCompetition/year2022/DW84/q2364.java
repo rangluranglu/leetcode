@@ -3,7 +3,7 @@ package WeekCompetition.year2022.DW84;
 import java.util.HashMap;
 import java.util.Map;
 
-public class q6142 {
+public class q2364 {
     public static long countBadPairs(int[] nums) {
 
         int n = nums.length;

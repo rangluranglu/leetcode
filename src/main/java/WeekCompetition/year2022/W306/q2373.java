@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.W306;
 
-public class q6148 {
+public class q2373 {
     public int[][] largestLocal(int[][] grid) {
         int n = grid.length;
         if (n <= 2){

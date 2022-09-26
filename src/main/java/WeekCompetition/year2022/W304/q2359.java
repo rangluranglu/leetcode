@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class q6134 {
+public class q2359 {
     public static void main(String[] args) {
         int[] nums = {1,2,-1};
         int ans = closestMeetingNode(nums, 0, 2);

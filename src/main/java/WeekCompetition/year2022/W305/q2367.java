@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.W305;
 
-public class q6136 {
+public class q2367 {
     public int arithmeticTriplets(int[] nums, int diff) {
         int n = nums.length;
         int ans = 0;

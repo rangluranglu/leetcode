@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class q6143 {
+public class q2365 {
     public static void main(String[] args) {
         int[] nums = {1,2,1,2,3,1};
         System.out.println(taskSchedulerII(nums, 3));

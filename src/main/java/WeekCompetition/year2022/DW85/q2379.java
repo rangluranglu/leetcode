@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.DW85;
 
-public class q6156 {
+public class q2379 {
     public int minimumRecolors(String blocks, int k) {
         int black = 0, white = 0;
         int ans = Integer.MAX_VALUE;

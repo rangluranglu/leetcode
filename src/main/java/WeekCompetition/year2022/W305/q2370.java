@@ -2,7 +2,7 @@ package WeekCompetition.year2022.W305;
 
 import java.util.*;
 
-public class q6139 {
+public class q2370 {
     int ans;
     public int reachableNodes(int n, int[][] edges, int[] restricted) {
         // dfs;

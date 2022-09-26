@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.PriorityQueue;
 
-public class q6155 {
+public class q2385 {
     public static void main(String[] args) {
         int[] nums = {1, -2, 3, 4, -10, 12};
         System.out.println(kSum(nums, 16));

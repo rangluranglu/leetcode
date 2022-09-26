@@ -3,7 +3,7 @@ package WeekCompetition.year2022.DW83;
 import java.util.HashSet;
 import java.util.Set;
 
-public class q6131 {
+public class q2350 {
     public static void main(String[] args) {
         int[] rolls = {4,2,1,2,3,3,2,4,1};
         System.out.println(shortestSequence2(rolls, 4));

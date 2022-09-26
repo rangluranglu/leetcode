@@ -1,9 +1,7 @@
 package WeekCompetition.year2022.W307;
 
-import java.util.ArrayDeque;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Queue;
 
 public class q6154 {
     Map<Integer, TreeNode> parents = new HashMap<>();

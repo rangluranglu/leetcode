@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.DW83;
 
-public class q6128 {
+public class q2347 {
     public String bestHand(int[] ranks, char[] suits) {
         final String q1 = "Flush";
         final String q2 = "Three of a Kind";

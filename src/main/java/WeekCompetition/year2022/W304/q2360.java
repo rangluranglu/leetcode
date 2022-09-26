@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
-public class q6135 {
+public class q2360 {
     public int longestCycle(int[] edges) {
         int n = edges.length;
         // 记录入度

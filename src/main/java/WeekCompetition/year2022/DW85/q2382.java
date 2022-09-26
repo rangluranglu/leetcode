@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.DW85;
 
-public class q6159 {
+public class q2382 {
     int[] fa;
     public long[] maximumSegmentSum(int[] nums, int[] removeQueries) {
         int n = nums.length;

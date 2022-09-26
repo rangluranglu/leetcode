@@ -3,7 +3,7 @@ package WeekCompetition.year2022.DW84;
 import java.util.ArrayList;
 import java.util.List;
 
-public class q6141 {
+public class q2363 {
     public List<List<Integer>> mergeSimilarItems(int[][] items1, int[][] items2) {
         int[] count = new int[1001];
 

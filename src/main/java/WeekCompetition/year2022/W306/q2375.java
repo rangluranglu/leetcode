@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.W306;
 
-public class q6150 {
+public class q2375 {
     public static void main(String[] args) {
         String pattern = "IIIDIDDD";
         System.out.println(smallestNumber(pattern));

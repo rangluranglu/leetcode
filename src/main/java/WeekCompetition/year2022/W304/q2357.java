@@ -2,7 +2,7 @@ package WeekCompetition.year2022.W304;
 
 import java.util.Arrays;
 
-public class q6132 {
+public class q2357 {
     public static void main(String[] args) {
         int[] nums = {1,5,0,3,5};
         System.out.printf("" + minimumOperations(nums));

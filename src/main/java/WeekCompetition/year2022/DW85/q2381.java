@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.DW85;
 
-public class q6158 {
+public class q2381 {
     public String shiftingLetters(String s, int[][] shifts) {
         // 差分数组
         int n = s.length();

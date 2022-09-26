@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.W306;
 
-public class q6151 {
+public class q2376 {
     public int countSpecialNumbers(int n) {
         // 数学
 

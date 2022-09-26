@@ -2,7 +2,7 @@ package WeekCompetition.year2022.W305;
 
 import java.util.Arrays;
 
-public class q6137 {
+public class q2368 {
 
     public static void main(String[] args) {
         int[] nums = {579611,579611,579611,731172,731172,496074,496074,496074,151416,151416,151416};

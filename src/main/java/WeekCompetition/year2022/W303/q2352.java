@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class q6125 {
+public class q2352 {
     public int equalPairs(int[][] grid) {
         int  n = grid.length;
         Map<Integer, List<Integer>> indexMap = new HashMap<>();

@@ -1,8 +1,6 @@
 package WeekCompetition.year2022.W305;
 
-import java.util.Map;
-
-public class q6138 {
+public class q2369 {
     public static void main(String[] args) {
         String a = "abad";
         System.out.println(longestIdealString(a, 0));

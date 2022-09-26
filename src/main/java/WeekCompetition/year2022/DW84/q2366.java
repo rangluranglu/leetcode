@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.DW84;
 
-public class q6144 {
+public class q2366 {
     public static void main(String[] args) {
         int[] nums = {12,9,7,6,17,19,21};
         System.out.println(minimumReplacement(nums));

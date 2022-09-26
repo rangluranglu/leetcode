@@ -1,6 +1,6 @@
 package WeekCompetition.year2022.W307;
 
-public class q6166 {
+public class q2386 {
     public static void main(String[] args) {
         String num = "00";
         System.out.println(largestPalindromic(num));
