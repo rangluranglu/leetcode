@@ -24,6 +24,6 @@ public class interview0109 {
     }
 
     public boolean isFlipedString2(String s1, String s2) {
-        return s1.length() == s2.length() && (s1 + s2).contains(s2);
+        return s1.length() == s2.length() && (s1 + s1).contains(s2);
     }
 }
