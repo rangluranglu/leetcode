@@ -2,7 +2,7 @@ package WeekCompetition.year2022.DW83;
 
 import java.util.*;
 
-public class q6130 {
+public class q2349 {
 
 }
 class NumberContainers {

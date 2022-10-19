@@ -3,7 +3,7 @@ package WeekCompetition.year2022.W307;
 import java.util.HashMap;
 import java.util.Map;
 
-public class q6154 {
+public class q2384 {
     Map<Integer, TreeNode> parents = new HashMap<>();
     int ans = 0;
     TreeNode s = null;
