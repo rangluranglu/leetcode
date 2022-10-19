@@ -7,7 +7,7 @@ import java.util.List;
 public class q886 {
     public boolean possibleBipartition(int n, int[][] dislikes) {
         // 深度优先
-
+        return false;
     }
 
 

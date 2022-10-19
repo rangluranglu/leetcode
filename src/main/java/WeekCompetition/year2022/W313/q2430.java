@@ -44,4 +44,8 @@ public class q2430 {
 
         return true;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
