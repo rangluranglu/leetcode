@@ -14,6 +14,7 @@ public class q907 {
         int[] right = new int[n];
 
         // 左边第一个大于arr[i]的
+        // 单调递增
         for (int i = 0; i < n; i++) {
             while(!stack.isEmpty() && arr[i] <= arr[stack.peek()]){
                 stack.pop();
