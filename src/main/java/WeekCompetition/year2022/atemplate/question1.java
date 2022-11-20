@@ -1,19 +1,36 @@
 package WeekCompetition.year2022.atemplate;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 public class question1 {
-    public boolean haveConflict(String[] event1, String[] event2) {
-        int s1 = convertMinutes(event1[0]);
-        int e1 = convertMinutes(event1[1]);
+    public int unequalTriplets(int[] nums) {
+        Map<Integer, Integer> map  = new HashMap<>();
 
-        int s2 = convertMinutes(event2[0]);
-        int e2 = convertMinutes(event2[1]);
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+        if(map.size() < 3){
+            return 0;
+        }
+        int[] value = new int[map.size()];
+        int index = 0;
 
-        return !(s1 > e2 || s2 > e1);
-    }
+        for (int val : map.values()) {
+            value[index] = val;
+            index++;
+        }
 
-    public int convertMinutes(String time){
-        String[] t = time.split(":");
+        int ans = 0;
+        for (int i = 0; i < value.length - 2; i++) {
+            for (int j = i + 1; j < value.length - 1; j++) {
+                for(int k = j + 1; k < value.length; k++){
+                    ans += (value[i] * value[j] * value[k]);
+                }
+            }
+        }
 
-        return Integer.parseInt(t[0]) * 60 + Integer.parseInt(t[1]);
+        return ans;
     }
 }
