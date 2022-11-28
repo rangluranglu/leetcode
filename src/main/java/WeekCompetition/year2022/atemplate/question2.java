@@ -6,43 +6,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class question2 {
-    public List<List<Integer>> closestNodes(TreeNode root, List<Integer> queries) {
-        // 中序遍历
-        List<List<Integer>> ans = new ArrayList<>();
-        int n = queries.size();
-        for (int i = 0; i < n; i++) {
-            // 搜索， 二分
-            ans.add(find(root, queries.get(i)));
-        }
+    public int appendCharacters(String s, String t) {
+        // 双指针
+        int i = 0, j = 0;
+        int m = s.length(), n = t.length();
 
-        return ans;
-    }
-
-    private List<Integer> find(TreeNode root, int tar) {
-        int left = -1;
-        int right = -1;
-
-        while(root != null){
-            if(tar > root.val){
-                left = root.val;
-                root = root.right;
-            }else if(tar < root.val){
-                right = root.val;
-                root = root.left;
+        while (i < m && j < n){
+            if(s.charAt(i) ==t.charAt(j)){
+                i ++;
+                j ++;
             }else {
-                return new ArrayList<Integer>(){{
-                    add(tar);
-                    add(tar);
-                }};
+                i ++;
             }
         }
 
-        int finalLeft = left;
-        int finalRight = right;
-        return new ArrayList<Integer>(){{
-            add(finalLeft);
-            add(finalRight);
-        }};
+        if(j == n){
+            return 0;
+        }else {
+            return n - j;
+        }
     }
-
 }
