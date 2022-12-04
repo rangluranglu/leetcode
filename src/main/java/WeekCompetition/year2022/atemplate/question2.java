@@ -2,28 +2,35 @@ package WeekCompetition.year2022.atemplate;
 
 import Common.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class question2 {
-    public int appendCharacters(String s, String t) {
-        // 双指针
-        int i = 0, j = 0;
-        int m = s.length(), n = t.length();
+    public long dividePlayers(int[] skill) {
+        int n = skill.length;
+        int group = n / 2;
 
-        while (i < m && j < n){
-            if(s.charAt(i) ==t.charAt(j)){
-                i ++;
-                j ++;
+        int sum = Arrays.stream(skill).sum();
+
+        int pre = sum / group;
+        System.out.println(pre);
+        Map<Integer, Integer> map = new HashMap<>();
+        long ans = 0;
+        for(int sk : skill){
+            if(map.containsKey(pre - sk)){
+                ans += (long) sk * (pre - sk);
+                map.put(pre - sk, map.get(pre - sk) - 1);
+                if(map.get(pre - sk) == 0){
+                    map.remove(pre - sk);
+                }
             }else {
-                i ++;
+                map.put(sk, map.getOrDefault(sk, 0) + 1);
             }
         }
 
-        if(j == n){
-            return 0;
-        }else {
-            return n - j;
+        if(map.size() > 0){
+            return -1;
         }
+
+        return ans;
     }
 }

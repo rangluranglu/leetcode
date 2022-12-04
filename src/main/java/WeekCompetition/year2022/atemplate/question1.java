@@ -2,40 +2,24 @@ package WeekCompetition.year2022.atemplate;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class question1 {
-    public int pivotInteger(int n) {
-        int sum = (1 + n) * n / 2;
-        System.out.println(sum);
-        for (int i = n / 2; i <= n; i++){
-            if(i * i + i < sum){
-                continue;
-            }else if(i * i + 1 == sum){
-                return i;
-            }else {
-                return -1;
+    public boolean isCircularSentence(String sentence) {
+        String[] s = sentence.split(" ");
+        int n = s.length;
+
+        for (int i = 0; i < n - 1; i++) {
+            if(s[i].charAt(s[i].length() - 1) != s[i + 1].charAt(0)){
+                return false;
             }
         }
 
-        return -1;
-    }
-
-
-    public int pivotInteger2(int n) {
-        if(n == 1){
-            return -1;
+        if(s[n - 1].charAt(s[n - 1].length() - 1) != s[0].charAt(0)){
+            return false;
         }
-        int sum = (1 + n) * n / 2;
-        for (int i = 1; i <= n; i++) {
-            if(countSum(i) == sum - countSum(i-1)){
-                return i;
-            }
-        }
-        return -1;
-    }
 
-    public int countSum(int n){
-        return (1 + n) * n/ 2;
+        return true;
     }
 }
