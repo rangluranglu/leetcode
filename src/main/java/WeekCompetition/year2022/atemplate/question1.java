@@ -6,20 +6,17 @@ import java.util.Locale;
 import java.util.Map;
 
 public class question1 {
-    public boolean isCircularSentence(String sentence) {
-        String[] s = sentence.split(" ");
-        int n = s.length;
+    public int closetTarget(String[] words, String target, int startIndex) {
+        int n = words.length;
 
-        for (int i = 0; i < n - 1; i++) {
-            if(s[i].charAt(s[i].length() - 1) != s[i + 1].charAt(0)){
-                return false;
+        int index = startIndex;
+
+        for (int i = 0; i <= n / 2; i++) {
+            if(words[(index + i) % n].equals(target) || words[(index - i + n) %  n].equals(target)){
+                return i;
             }
         }
 
-        if(s[n - 1].charAt(s[n - 1].length() - 1) != s[0].charAt(0)){
-            return false;
-        }
-
-        return true;
+        return -1;
     }
 }
