@@ -1,7 +1,6 @@
-package Year2023.Week.atemplate;
+package Year2023.Week.W326;
 
-public class question3 {
-
+public class q2522 {
 
     public int minimumPartition(String s, int k) {
         // 贪心 字符串数目最少

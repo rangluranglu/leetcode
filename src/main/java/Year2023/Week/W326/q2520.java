@@ -1,6 +1,6 @@
-package Year2023.Week.atemplate;
+package Year2023.Week.W326;
 
-public class question1 {
+public class q2520 {
     public int countDigits(int num) {
         int tmp = num, ans = 0;
 

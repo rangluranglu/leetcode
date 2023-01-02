@@ -1,16 +1,10 @@
-package Year2023.Week.atemplate;
+package Year2023.Week.W326;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
-public class question2 {
-    public static void main(String[] args) {
-        int[] nums = new int[]{2,4,3,7,10,6};
-        System.out.println(distinctPrimeFactors(nums));
-    }
-    public static int distinctPrimeFactors(int[] nums) {
+public class q2521 {
+    public int distinctPrimeFactors(int[] nums) {
         // 质因子乘积
         Set<Integer> set = new HashSet<>();
 
