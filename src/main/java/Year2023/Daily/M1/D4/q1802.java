@@ -36,6 +36,4 @@ public class q1802 {
             return (long) big * (big - 1) / 2 + ones;
         }
     }
-
-
 }
