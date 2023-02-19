@@ -4,21 +4,27 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 public class question2 {
-    public long countFairPairs(int[] nums, int lower, int upper) {
-        // 统计公平数对
-        Arrays.sort(nums);
-        int ans = 0, n = nums.length;
-        int last = n -1, start = 0;
-        while (nums[last] > upper){
-            last --;
-        }
+    public int minOperations(int n) {
+        // 二进制 连续的1
 
-        for (int i = 0; i < n; i++) {
-            int num = nums[i];
-            int cnt = 0;
+        String bin = Integer.toBinaryString(n);
+        int ans = 0;
+        int cnt = 0;
+        int i = 0;
+        while (i < bin.length()){
+            // 间隔是0
+            while (i <bin.length() && bin.charAt(i) == '0'){
+                i ++;
+            }
 
-            while (num + nums[last] <)
 
+            if(bin.charAt(i) == 0){
+                if(i < bin.length() - 1 && bin.charAt(i + 1) == '1'){
+                    cnt ++;
+                    i++;
+                }
+            }
         }
     }
+
 }

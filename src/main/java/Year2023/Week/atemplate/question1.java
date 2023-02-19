@@ -1,30 +1,35 @@
 package Year2023.Week.atemplate;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class question1 {
-    public static void main(String[] args) {
-        System.out.println(cal(15,49));
-    }
-    public long findTheArrayConcVal(int[] nums) {
-        long ans = 0;
-        int n = nums.length;
-        for(int i = 0; i < n / 2; i++){
-            ans += cal(nums[i], nums[n - 1 - i]);
+
+    public int[][] mergeArrays(int[][] nums1, int[][] nums2) {
+        int[] count = new int[1001];
+
+        for (int[] ints : nums1) {
+            count[ints[0]] += ints[1];
         }
 
-        if((n & 1) == 1){
-            return ans + nums[n / 2];
+        for(int[] ints: nums2){
+            count[ints[0]] += ints[1];
         }
 
-        return ans;
-
-    }
-
-    public static long cal(int a, int b){
-        int n = 1, c = b;
-        while (b !=0){
-            b /= 10;
-            n *= 10;
+        List<int[]> ans = new ArrayList<>();
+        for (int i = 0; i < 1001; i++) {
+            if(count[i] != 0){
+                ans.add(new int[]{i, count[i]});
+            }
         }
-        return (long) a * n + c;
+
+        int[][] res = new int[ans.size()][2];
+        for (int i = 0; i < ans.size(); i++) {
+            res[i] = ans.get(i);
+        }
+
+        return res;
+
+
     }
 }
