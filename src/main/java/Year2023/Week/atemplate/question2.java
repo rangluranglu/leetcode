@@ -6,25 +6,26 @@ import java.util.*;
 public class question2 {
     public int minOperations(int n) {
         // 二进制 连续的1
+        //n 最低位为0则右移，不增加操作数
+        //n 的二进制末尾有连续两个 1 以上做 +1 操作， step++
+        //n 的二进制末尾只有一个 1 做 - 操作， step++
+        int step = 0;
 
-        String bin = Integer.toBinaryString(n);
-        int ans = 0;
-        int cnt = 0;
-        int i = 0;
-        while (i < bin.length()){
-            // 间隔是0
-            while (i <bin.length() && bin.charAt(i) == '0'){
-                i ++;
+        while (n > 0){
+            // 两个连续的1
+            if((n & 3) == 1){
+                n ++;
+                step ++;
             }
 
-
-            if(bin.charAt(i) == 0){
-                if(i < bin.length() - 1 && bin.charAt(i + 1) == '1'){
-                    cnt ++;
-                    i++;
-                }
+            if((n & 1) == 1){
+                step ++;
             }
+
+            n >>= 1;
         }
+
+        return step;
     }
 
 }
