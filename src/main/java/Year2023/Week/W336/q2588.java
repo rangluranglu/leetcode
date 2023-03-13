@@ -1,9 +1,9 @@
-package Year2023.Week.atemplate;
+package Year2023.Week.W336;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class question3 {
+public class q2588 {
     public long beautifulSubarrays(int[] nums) {
         // 美丽子树组的数目  nums[i] 和 nums[j] 在二进制下第k位 是 1
 
@@ -34,7 +34,4 @@ public class question3 {
         return ans;
 
     }
-
-
-
 }

@@ -1,12 +1,9 @@
-package Year2023.Week.atemplate;
+package Year2023.Week.W336;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-public class question1 {
-
+public class q2586 {
     public int vowelStrings(String[] words, int left, int right) {
         Set<Character> set = new HashSet<Character>(){{
             add('a');

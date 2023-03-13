@@ -1,9 +1,8 @@
-package Year2023.Week.atemplate;
+package Year2023.Week.W336;
 
-import java.lang.reflect.Array;
-import java.util.*;
+import java.util.Arrays;
 
-public class question2 {
+public class q2587 {
     public int maxScore(int[] nums) {
         Arrays.sort(nums);
         long preSum = 0;
@@ -22,5 +21,4 @@ public class question2 {
 
         return ans;
     }
-
 }
