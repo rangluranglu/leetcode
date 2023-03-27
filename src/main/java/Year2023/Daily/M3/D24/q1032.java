@@ -1,4 +1,4 @@
-package Year2023.Daily.M3.D14;
+package Year2023.Daily.M3.D24;
 
 public class q1032 {
 }
