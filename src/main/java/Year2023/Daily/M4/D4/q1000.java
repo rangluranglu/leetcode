@@ -36,7 +36,7 @@ public class q1000 {
 
         // 初始化
         for (int i = 0, s = 0; i < n; i++) {
-            d[i][i][0] = 0;
+            d[i][i][1] = 0;
             s += stones[i];
 
             sum[i] = s;
