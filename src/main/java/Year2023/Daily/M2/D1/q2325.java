@@ -25,7 +25,11 @@ public class q2325 {
 
         StringBuilder sb = new StringBuilder();
         for(char c : message.toCharArray()){
-            sb.append(c == ' ' ? c : map.get(c));
+            if(c == ' '){
+                sb.append(' ');
+            }else {
+                sb.append(map.get(c));
+            }
         }
 
         return sb.toString();
