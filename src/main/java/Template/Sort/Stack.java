@@ -50,4 +50,10 @@ public class Stack extends SortExample{
         }
     }
 
+    public static void main(String[] args) {
+        int[] nums = new int[]{5, 6, 7, 4, 1};
+        sort(nums);
+        show(nums);
+    }
+
 }
