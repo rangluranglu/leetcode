@@ -1,6 +1,6 @@
-package Year2023.Week.W432;
+package Year2023.Week.W342;
 
-public class q6391 {
+public class q2653 {
     public int sumOfMultiples(int n) {
         // m 的倍数有 [n/m] 个 利用等差数列求和计算
 

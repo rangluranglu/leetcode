@@ -1,6 +1,6 @@
-package Year2023.Week.W432;
+package Year2023.Week.W342;
 
-public class q6392 {
+public class q2654 {
     public int minOperations(int[] nums) {
         // nums 下标从0开始的正整数
         // 将 nums[i] 或 nums[i + 1] 之一替换为他们的最大公约数

@@ -1,8 +1,6 @@
-package Year2023.Week.W432;
+package Year2023.Week.W342;
 
-import java.util.PriorityQueue;
-
-public class q6390 {
+public class q2652 {
     public int[] getSubarrayBeauty(int[] nums, int k, int x) {
         // 每个长度为k的美丽值
         // 美丽值 --> 如果子数组中第 x 小整数 是 负数 ，那么美丽值为第 x 小的数，否则美丽值为 0 。
