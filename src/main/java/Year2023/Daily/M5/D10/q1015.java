@@ -1,4 +1,4 @@
-package Year2023.Daily.M5.D9;
+package Year2023.Daily.M5.D10;
 
 public class q1015 {
     public int smallestRepunitDivByK(int k) {
@@ -8,6 +8,7 @@ public class q1015 {
             return -1;
         }
 
+        // 一定有解
         int resid = 1 % k, len = 1;
 
         while (resid != 0){

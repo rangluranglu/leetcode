@@ -1,4 +1,4 @@
-package Year2023.Daily.M5.D7;
+package Year2023.Daily.M5.D8;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
