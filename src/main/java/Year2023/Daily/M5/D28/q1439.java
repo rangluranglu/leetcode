@@ -6,6 +6,7 @@ import java.util.PriorityQueue;
 
 public class q1439 {
     public int kthSmallest(int[][] mat, int k) {
+        // 前置问题 373.查找和最小的k对数字
         int m = mat.length;
         int[] prev = mat[0];
 
