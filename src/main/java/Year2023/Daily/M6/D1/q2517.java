@@ -1,4 +1,4 @@
-package Year2023.Daily.M6;
+package Year2023.Daily.M6.D1;
 
 import java.util.Arrays;
 
