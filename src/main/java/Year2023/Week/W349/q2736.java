@@ -53,7 +53,7 @@ public class q2736 {
                 id --;
             }
 
-            // 单调栈二分
+            // 单调栈二分 大于或等于给定键元素(ele)的最小键元素链接的键值对
             Map.Entry<Integer, Integer> entry = treeMap.ceilingEntry(y);
             if(entry != null){
                 ans[qId] = entry.getValue();
