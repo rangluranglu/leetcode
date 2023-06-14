@@ -27,4 +27,25 @@ public class q2593 {
 
         return ans;
     }
+
+
+    public long findScore2(int[] nums) {
+        // O（n） 时间复杂度
+        // 查找严格递减的子段
+
+        long ans = 0;
+
+        for (int i = 0, n = nums.length; i < n; i += 2) {
+            int i0 = i;
+            while (i + 1 < n && nums[i] > nums[i + 1]){
+                i ++;
+            }
+
+            for(int j = i; j >= i0; j  -= 2){
+                ans += nums[j];
+            }
+        }
+
+        return ans;
+    }
 }
