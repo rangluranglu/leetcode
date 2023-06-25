@@ -1,40 +1,39 @@
 package Year2023.Week.atemplate;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class question3 {
-    public long beautifulSubarrays(int[] nums) {
-        // 美丽子树组的数目  nums[i] 和 nums[j] 在二进制下第k位 是 1
 
-        // 统计每位是1 的个数， 子数组 1 的个数是偶数
-        // length <= 10^5   ,   nums[i] <= 10 ^ 6
-        // 子数组， 前缀和
+    private static int mod = (int) 1e9 + 7;
+    public int numberOfGoodSubarraySplits(int[] nums) {
+        int sum = Arrays.stream(nums).sum();
 
-        // 异或 ？？ -->> 不同是1 ， 相同是 0
+        if(sum == 1){
+            return 1;
+        }
 
-        // 边界
-        Map<Long, Long> map = new HashMap<>();
+        if(sum == 0){
+            return 0;
+        }
 
-        long ans = 0;
-        long preSum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            preSum ^= nums[i];
-            if(preSum == 0){
-                ans += 1;
-            }
-            if(map.containsKey(preSum)){
-                ans += map.get(preSum);
-                map.put(preSum, map.get(preSum) + 1);
-            }else {
-                map.put(preSum, 1L);
+        // 两个1中间0的个数
+        long ans = 1;
+        int lastIndex = -1;
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] == 1){
+                if(lastIndex == -1){
+                    lastIndex = i;
+                }else {
+                    ans = ((ans % mod) *  (i - lastIndex)) % mod;
+                    lastIndex = i;
+                }
             }
         }
 
-        return ans;
-
+        return(int) ans;
     }
-
 
 
 }
