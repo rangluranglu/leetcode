@@ -5,6 +5,19 @@ public class q1401 {
         // 交集
         // 判断圆形圆心 是否在矩形圆角内。
 
-        return false;
+        // 求圆心到矩形区域的最短距离
+
+        double dist = 0;
+
+        if(xCenter < x1 || xCenter > x2){
+            dist += Math.min(Math.pow(x1 - xCenter, 2), Math.pow(x2 - xCenter, 2));
+        }
+
+        if(yCenter < y1 || yCenter > y2){
+            dist += Math.min(Math.pow(y1 - yCenter, 2), Math.pow(y2 - yCenter, 2));
+        }
+
+
+        return  dist <= radius * radius;
     }
 }
