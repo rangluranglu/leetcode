@@ -7,8 +7,6 @@ public class q2742 {
         // 0-1 背包
         // 付费 + 免费 = n， 付费刷墙时间只和 >= 免费刷墙个数， 付费刷墙时间 >= n - 付费刷墙个数
         // [付费刷墙时间 + 1] 之和 >= n
-
-        // time[i] + 看成物品体积， cost[i] 看成物品价值
         int n = cost.length;
 
         int[] f = new int[n + 1];
@@ -24,5 +22,7 @@ public class q2742 {
         }
 
         return f[n];
+        // time[i] + 看成物品体积， cost[i] 看成物品价值
+
     }
 }
