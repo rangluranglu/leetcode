@@ -1,10 +1,8 @@
 package Year2023.Week.W351;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
-public class question3 {
+public class q2750 {
 
     private static int mod = (int) 1e9 + 7;
     public int numberOfGoodSubarraySplits(int[] nums) {

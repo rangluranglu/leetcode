@@ -1,9 +1,6 @@
 package Year2023.Week.W351;
 
-import java.lang.reflect.Array;
-import java.util.*;
-
-public class question2 {
+public class q2749 {
     public int makeTheIntegerZero(int num1, int num2) {
         // 从小到大枚举答案
         // 简化 num1 - num2 * k 能否拆成 k个2^i 之和

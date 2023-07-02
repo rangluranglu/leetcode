@@ -3,7 +3,7 @@ package Year2023.Week.W351;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class question4 {
+public class q2751 {
     public List<Integer> survivedRobotsHealths(int[] positions, int[] healths, String directions) {
         // 分别维护向左和向右的机器人
         // 按照 positions 排序

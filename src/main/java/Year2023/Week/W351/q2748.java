@@ -2,7 +2,7 @@ package Year2023.Week.W351;
 
 import java.util.*;
 
-public class question1 {
+public class q2748 {
 
     public int countBeautifulPairs(int[] nums) {
         // 长度为100
