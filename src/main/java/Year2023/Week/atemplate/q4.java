@@ -1,0 +1,5 @@
+package Year2023.Week.atemplate;
+
+public class q4 {
+
+}

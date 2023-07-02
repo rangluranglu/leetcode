@@ -1,4 +1,4 @@
-package Year2023.Week.atemplate;
+package Year2023.Week.W351;
 
 import java.util.*;
 import java.util.stream.Collectors;
