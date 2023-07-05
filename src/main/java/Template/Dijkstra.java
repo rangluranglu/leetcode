@@ -28,6 +28,8 @@ public class Dijkstra {
 
         boolean[] vis = new boolean[n];
 
+        // 也可以用 for(int i < 0; i < n; i++) 全部遍历，
+        // 因为可以提前找到答案，所以可以用 f(;;)
         for(;;){
 
             // 找到当前最短路径，去更新邻居的最短路径
@@ -74,28 +76,28 @@ public class Dijkstra {
             g[e[0]][e[1]] = e[2];
         }
 
-        Queue<int[]> pq = new PriorityQueue<>((a, b) -> a[1] - b[1]);
+        Queue<int[]> pq = new PriorityQueue<>((a, b) -> a[1] != b[1] ? a[1] - b[1] : a[0] - b[0]);
 
         int[] dis = new int[n];
         Arrays.fill(dis, INF);
         dis[start] = 0;
 
-        boolean[] vis = new boolean[n];
         pq.add(new int[]{start, 0});
 
 
         while (!pq.isEmpty()){
             // 最短路径
             int[] node = pq.poll();
-            if(vis[node[0]]){
+            if(dis[node[0]] < node[1]){
                 continue;
             }
+
             if(node[0] == end){
                 return dis[end];
             }
-            vis[node[0]] = true;
+
             for (int i = 0; i < n; i++) {
-                if(!vis[i] && g[node[0]][i] + node[1] < dis[i]){
+                if(g[node[0]][i] + node[1] < dis[i]){
                     dis[i] = g[node[0]][i] + node[1];
                     pq.offer(new int[]{i, dis[i]});
                 }
