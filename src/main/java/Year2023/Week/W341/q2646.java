@@ -91,6 +91,7 @@ public class q2646 {
         // 对于 x - lca`  diff[x] +1, diff[lca] -1
         //
 
-
+        // todo
+        return 0;
     }
 }
