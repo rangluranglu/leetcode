@@ -1,5 +1,7 @@
 package Test;
 
+import java.util.concurrent.locks.AbstractQueuedSynchronizer;
+
 public class WaitAndNotifyDemo {
     public static void main(String[] args) {
         MyThread myThread = new MyThread();
