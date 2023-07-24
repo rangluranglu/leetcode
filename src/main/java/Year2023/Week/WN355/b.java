@@ -8,38 +8,22 @@ import java.util.stream.Collectors;
 public class b {
     public long maxArrayValue(int[] nums) {
         // 将前一个小的数 加给后一个大的数
-        // 递增数组
-        if(nums.length == 1){
-            return nums[0];
-        }
-        List<Long> list = Arrays.stream(nums).mapToLong(i -> (long) i).boxed().collect(Collectors.toList());
-        return dfs(list);
+        // 从后往前一次遍历
 
-    }
+        int last = nums.length - 1;
+        long ans = nums[last], tmp = nums[last];
+        while (last >= 1){
+            if(nums[last - 1] <= tmp){
+                tmp += nums[last - 1];
 
-    public  long dfs(List<Long> nums){
-        if(nums.size() == 1){
-            return nums.get(0);
-        }
-        List<Long> sums = new ArrayList<>();
-
-        long sum = nums.get(0);
-        for (int i = 0; i < nums.size(); i++) {
-            if(nums.get(i) >= nums.get(i - 1)){
-                sum += nums.get(i);
-            }else{
-                sums.add(sum);
-                sum = nums.get(i);
+            }else {
+                tmp = nums[last - 1];
             }
-        }
-        sums.add(sum);
-
-        System.out.println(sums);
-        if (sums.size() == nums.size() || sums.size() == 1){
-            return sums.get(0);
+            ans = Math.max(tmp, ans);
+            last --;
         }
 
-        return dfs(sums);
+        return ans;
     }
 
     // 递归
