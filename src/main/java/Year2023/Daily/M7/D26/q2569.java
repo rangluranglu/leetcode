@@ -3,7 +3,7 @@ package Year2023.Daily.M7.D26;
 public class q2569 {
     public long[] handleQuery(int[] nums1, int[] nums2, int[][] queries) {
         // 线段树
-
+        return new long[0];
     }
 
 }
@@ -30,8 +30,6 @@ class SegmentTree{
     }
 
     private void build(Node node, int start, int end, int[] nums){
-        if(start == end){
-            node.val = nums
-        }
+        return;
     }
 }
